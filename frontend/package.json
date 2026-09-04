@@ -1,12 +1,12 @@
 {
-  "name": "frontend",
+  "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "npx next dev --webpack",
+    "build": "npx next build --webpack",
+    "start": "npx next start --webpack"
   },
+  
   "dependencies": {
     "next": "16.3.3",
     "nodemailer": "^9.0.6",

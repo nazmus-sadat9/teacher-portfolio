@@ -1,1 +1,81 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@theme inline {
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --radius: 1rem;
+}
+
+:root {
+  color-scheme: light;
+  --background: #f8f6f0;
+  --foreground: #22382c;
+  --primary: #1e593c;
+  --primary-foreground: #f8faf6;
+  --muted-foreground: #5a7767;
+  --border: #dad6c9;
+  --card: #f1ede0;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  @apply bg-background text-foreground font-sans;
+}
+
+.footer{
+  width: 100%;
+  font-size: clamp(0.7rem, 4vw, 1.2rem);
+  color: var(--muted-foreground);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeHeader{
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1;
+  font-weight: 450;
+  margin: 3% 0 0 0;
+}
+
+.homeHeader em{
+  color: var(--primary);
+}
+
+.cards{
+  transition: 0.2s ease;
+  &:hover{
+    transform: translateY(-0.5rem);
+  }
+}
