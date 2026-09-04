@@ -79,3 +79,14 @@ body {
     transform: translateY(-0.5rem);
   }
 }
+
+.link{
+  width: 100%;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background-color: var(--border);
+  }
+}

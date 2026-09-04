@@ -56,10 +56,12 @@ export default function Home() {
         <p className="text-[#1e593c] text-[0.75rem] font-bold tracking-[0.16em] uppercase">
           What I teach
         </p>
+
         <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-12 mt-4">
           <h2 className="font-serif tracking-[-0.055em] leading-[0.98] text-[clamp(2.5rem,5vw,4.5rem)]">
             Practical English for real life.
           </h2>
+
           <p className="text-[#5a7767] leading-[1.8]">
             From classroom foundations to confident conversation, my lessons
             are friendly, focused, and designed around your goals.
@@ -67,21 +69,21 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-3 max-[700px]:grid-cols-1 gap-4 mt-12">
-          <article className="cards p-6 bg-[#f1ede0] rounded-2xl">
+          <article className="cards border-[#1e593c] border-[0.1em] p-6 bg-[#f1ede0] rounded-2xl">
             <b>Conversation</b>
             <p className="text-[#5a7767] leading-[1.6] mt-3">
               Speak naturally in everyday and professional situations.
             </p>
           </article>
 
-          <article className="cards p-6 bg-[#f1ede0] rounded-2xl">
+          <article className="cards border-[#1e593c] border-[0.1em] p-6 bg-[#f1ede0] rounded-2xl">
             <b>Grammar & writing</b>
             <p className="text-[#5a7767] leading-[1.6] mt-3">
               Build strong foundations and express your ideas clearly.
             </p>
           </article>
 
-          <article className="cards p-6 bg-[#f1ede0] rounded-2xl">
+          <article className="cards border-[#1e593c] border-[0.1em] p-6 bg-[#f1ede0] rounded-2xl">
             <b>Training</b>
             <p className="text-[#5a7767] leading-[1.6] mt-3">
               Learn with an experienced teacher and master trainer.
