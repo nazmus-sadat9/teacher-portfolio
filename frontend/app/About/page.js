@@ -13,7 +13,7 @@ export default function About() {
           About Atik
         </p>
 
-        <h1 className="font-serif tracking-[-0.055em] leading-[0.98] text-[clamp(3rem,7vw,6rem)] max-w-[850px] mt-4">
+        <h1 className="font-sans tracking-[-0.055em] leading-[0.98] text-[clamp(3rem,7vw,6rem)] max-w-[850px] mt-4">
           Teaching English with patience, purpose, and joy.
         </h1>
 
