@@ -5,13 +5,13 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-[#f8f6f0] text-[#22382c] font-sans selection:bg-[#dad6c9]">
+    <main className="bg-[#f8f6f0] text-[#22382c] selection:bg-[#dad6c9]">
       
       <Navbar />
 
       <section className="w-[min(1120px,calc(100%-3rem))] max-[700px]:w-[min(100%-2rem,1120px)] mx-auto grid grid-cols-2 max-[700px]:grid-cols-1 gap-20 max-[700px]:gap-8 items-center py-20 max-[700px]:py-12 pb-24 max-[700px]:pb-16">
         <div>
-          <p className="text-[#1e593c] text-[0.75rem] font-bold tracking-[0.16em] uppercase">
+          <p className="text-[#1e593c] text-[0.75rem] font-bold uppercase">
             English teacher · Master trainer
           </p>
 
@@ -53,7 +53,7 @@ export default function Home() {
 
       <section className="bg-[#1e593c] text-[#f8faf6] py-12">
         <div className="w-[min(1120px,calc(100%-3rem))] max-[700px]:w-[min(100%-2rem,1120px)] mx-auto">
-          <p className="max-w-[760px] font-serif italic text-[2rem] max-[700px]:text-[1.5rem] leading-[1.3]">
+          <p className="max-w-[760px] italic text-[2rem] max-[700px]:text-[1.5rem] leading-[1.3]">
             “English is not only a subject. It is a connection to people, ideas,
             and opportunity.”
           </p>
@@ -61,12 +61,12 @@ export default function Home() {
       </section>
 
       <section className="w-[min(1120px,calc(100%-3rem))] max-[700px]:w-[min(100%-2rem,1120px)] mx-auto py-24">
-        <p className="text-[#1e593c] text-[0.75rem] font-bold tracking-[0.16em] uppercase">
+        <p className="text-[#1e593c] text-[0.75rem] font-bold uppercase">
           What I teach
         </p>
 
         <div className="grid grid-cols-2 max-[700px]:grid-cols-1 gap-12 mt-4">
-          <h2 className="font-serif tracking-[-0.055em] leading-[0.98] text-[clamp(2.5rem,5vw,4.5rem)]">
+          <h2 className="text-[clamp(2.5rem,5vw,4.5rem)]">
             Practical English for real life.
           </h2>
 

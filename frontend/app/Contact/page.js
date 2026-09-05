@@ -80,7 +80,7 @@ export default function Contact() {
 }
 
   return (
-    <main className="bg-[#f8f6f0] w-screen text-[#22382c] font-sans selection:bg-[#dad6c9]">
+    <main className="bg-[#f8f6f0] w-screen text-[#22382c] selection:bg-[#dad6c9]">
 
       <Navbar />
 
@@ -89,7 +89,7 @@ export default function Contact() {
           Get in touch
         </p>
 
-        <h1 className="pl-[5%] font-serif text-[clamp(3rem,7vw,6rem)] max-w-[850px] mt-4">
+        <h1 className="pl-[5%] text-[clamp(3rem,7vw,6rem)] max-w-[850px] mt-4">
           Let&apos;s talk
         </h1>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                 placeholder="NAME"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full border border-[#dad6c9] rounded-xl bg-[#f1ede0] p-3.5 font-sans font-normal"
+                className="w-full border border-[#dad6c9] rounded-xl bg-[#f1ede0] p-3.5 font-normal"
               />
 
               {nameErr && <span className="text-red-600 text-sm font-normal">{nameErr}</span>}
@@ -121,7 +121,7 @@ export default function Contact() {
                  placeholder="EMAIL"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full border border-[#dad6c9] rounded-xl bg-[#f1ede0] p-3.5 font-sans font-normal"
+                className="w-full border border-[#dad6c9] rounded-xl bg-[#f1ede0] p-3.5 font-normal"
               />
               {emailErr && <span className="text-red-600 text-sm font-normal">{emailErr}</span>}
             </label>
@@ -134,7 +134,7 @@ export default function Contact() {
                 placeholder="MESSAGE"
                 value={msg}
                 onChange={(e) => setMsg(e.target.value)}
-                className="w-full border border-[#dad6c9] rounded-xl bg-[#f1ede0] p-3.5 font-sans font-normal resize-y"
+                className="w-full border border-[#dad6c9] rounded-xl bg-[#f1ede0] p-3.5 font-normal resize-y"
               />
               {msgErr && <span className="text-red-600 text-sm font-normal">{msgErr}</span>}
             </label>

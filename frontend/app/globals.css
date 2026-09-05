@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
 
 @theme inline {
-  --font-sans: var(--font);
-  --font-serif: var(--font);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -24,11 +22,11 @@
   --muted-foreground: #5a7767;
   --border: #dad6c9;
   --card: #f1ede0;
-  --font: font-family: "Martel", serif;
 }
 
 * {
   @apply border-border;
+  font-family: "Martel", serif;
 }
 
 html {
@@ -49,7 +47,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  @apply bg-background text-foreground font-sans;
+  @apply bg-background text-foreground;
 }
 
 .footer{
@@ -65,7 +63,6 @@ body {
 
 .homeHeader{
   font-size: clamp(3rem, 4vw, 4rem);
-  font-family: var(--font);
   line-height: 1;
   font-weight: 450;
   margin: 3% 0 0 0;
@@ -77,7 +74,6 @@ body {
 
 .cards{
   transition: 0.2s ease;
-  font-family: var(--font);
   &:hover{
     transform: translateY(-0.5rem);
   }
