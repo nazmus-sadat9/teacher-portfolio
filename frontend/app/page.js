@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-[#f8f6f0] text-[#22382c] font-sans">
+    <main className="bg-[#f8f6f0] text-[#22382c] font-sans selection:bg-[#dad6c9]">
       
       <Navbar />
 
@@ -30,16 +31,23 @@ export default function Home() {
             Contact me
           </Link>
 
-          <p className="mt-8 text-[#5a7767] text-[0.85rem]">
+          <p className="mt-8 text-[#5a7767] text-[1rem]">
             Based in Joypurhat, Rajshahi, Bangladesh
           </p>
         </div>
 
         <div
-          className="aspect-[4/5] flex items-center justify-center border border-[#1e593c] rounded-[2rem] bg-[#f1ede0] text-[#1e593c]">
-          <div className="w-[50%] aspect-[1/1] rounded-full bg-[#fff] flex items-center justify-center">
-            <span className="text-[2rem]">photo</span>
+          className="aspect-[4/4] flex items-center justify-evenly flex-col">
+          <div className="w-[50%] relative aspect-[1/1] rounded-full overflow-hidden bg-[#fff] flex items-center justify-center">
+            <Image 
+              src="/hero.jpg"
+              alt="Teacher image"
+              fill
+              sizes="100%"
+              className="object-cover object-center scale-150"
+            />
           </div>
+          <span className="text-[2rem] text-[#1e593c]">Atik Hasan</span>
         </div>
       </section>
 

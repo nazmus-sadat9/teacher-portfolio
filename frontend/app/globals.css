@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
 
 @theme inline {
-  --font-sans: "DM Sans", sans-serif;
-  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: var(--font);
+  --font-serif: var(--font);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -24,6 +24,7 @@
   --muted-foreground: #5a7767;
   --border: #dad6c9;
   --card: #f1ede0;
+  --font: font-family: "Martel", serif;
 }
 
 * {
@@ -53,17 +54,18 @@ body {
 
 .footer{
   width: 100%;
-  font-size: clamp(0.7rem, 4vw, 1.2rem);
-  color: var(--muted-foreground);
+  font-size: clamp(0.7rem, 3vw, 1.2rem);
+  background-color: var(--primary);
+  color: var(--background);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  padding: 2% 4%;
 }
 
 .homeHeader{
   font-size: clamp(3rem, 4vw, 4rem);
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font);
   line-height: 1;
   font-weight: 450;
   margin: 3% 0 0 0;
@@ -89,4 +91,38 @@ body {
   &:hover{
     background-color: var(--border);
   }
+}
+
+.hoverlink{
+  position: relative;
+  transition: 0.2s ease all;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary);
+    height: 2px;
+    width: 0;
+    transform: translateX(-50%);
+    transition: 0.2s ease all;
+    
+  }
+
+  &:hover{
+    color: var(--primary);
+  }
+}
+
+.hoverlink:hover::before{
+  width: 100%;
+}
+
+.contactHover:hover .arrow{
+  display: flex;
+}
+
+.arrow{
+  display: none;
 }

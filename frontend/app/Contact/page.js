@@ -18,9 +18,15 @@ export default function Contact() {
   // validation 
   function isFormValid() {
     
+    let isValid = true;
+
+    setNameErr("");
+    setEmailErr("");
+    setMsgErr("");
+
     if (!name.trim()) {
       setNameErr("Name can't be empty.");
-      return false;
+      isValid = false;
     }
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -30,49 +36,55 @@ export default function Contact() {
 
     } else if (!emailRegex.test(email)) {
       setEmailErr("Enter a valid email.");
-      return false;
+      isValid = false;
     }
 
     if (!msg.trim()) {
       setMsgErr("Message can't be empty.");
+      isValid = false;
     }
 
-    setNameErr("");
-    setEmailErr("");
-    setMsgErr("");
-    return true;
+    return isValid;
   }
 
   async function submit(e) {
 
     e.preventDefault();
 
-    if (isFormValid) {
+    if (!isFormValid()) return;
 
-      try{
+    try{
 
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name,
-            email,
-            msg
-          }),
-        });
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          msg
+        }),
+      });
 
-      } catch (err){
-        alert("Server error.");
+      if (response.ok) {
+        alert("Message sent successfully.");
+        setNameErr("");
+        setEmailErr("");
+        setMsgErr("");
+      } else {
+        alert("Failed to send message.");
       }
-    }
+
+    } catch (err){
+      alert("Server error.");
   }
+}
 
   return (
-    <main className="bg-[#f8f6f0] w-screen text-[#22382c] font-sans">
+    <main className="bg-[#f8f6f0] w-screen text-[#22382c] font-sans selection:bg-[#dad6c9]">
 
       <Navbar />
 
-      <section className="w-full mx-auto py-20 pb-28 max-[700px]:py-12 min-h-[75vh]">
+      <section className="w-full mx-auto py-20 pb-28 max-[700px]:py-12 min-h-[75vh] md:h-screen">
         <p className="pl-[5%] text-[#1e593c] text-[0.75rem] font-bold uppercase">
           Get in touch
         </p>
