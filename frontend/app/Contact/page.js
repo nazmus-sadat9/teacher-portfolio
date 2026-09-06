@@ -84,7 +84,7 @@ export default function Contact() {
 
       <Navbar />
 
-      <section className="w-full mx-auto py-20 pb-28 max-[700px]:py-12 min-h-[75vh] md:h-screen">
+      <section className="w-full mx-auto py-20 pb-28 md:pt-[7.5%] max-[700px]:py-12 min-h-[75vh] md:h-screen">
         <p className="pl-[5%] text-[#1e593c] text-[0.75rem] font-bold uppercase">
           Get in touch
         </p>
