@@ -19,9 +19,8 @@ export default function About() {
 
         <div className="max-w-[650px] mt-8 text-[#5a7767] text-[1.1rem] leading-[1.8] space-y-4">
           <p>
-            I am an English Teacher, Assistant Director of NSA Joypurhat, and Master
-            Trainer in English. I currently work as an Assistant Teacher of
-            English at Matrai High School, Kalai, Joypurhat.
+            I am an English Teacher, Founder &amp; Managing Director, and Master Trainer in English (Under the Ministry of Education). 
+            I currently work as an Assistant Teacher of English at Matrai High School, Kalai, Joypurhat.
           </p>
 
           <p>
@@ -44,9 +43,22 @@ export default function About() {
           </div>
 
           <div className="cards border-[#1e593c] border-[0.1em] p-6 bg-[#f1ede0] rounded-2xl">
-            <b>Education</b>
+            <b>Qualifications</b>
             <p className="text-[#5a7767] leading-[1.6] mt-3">
+              B.A. (Honours), M.A. in English
+              <br />
+              B.Ed. (First Class)
+              <br />
+              Master Trainer in English
+              <br />
+              Under the Ministry of Education
+            </p>
+          </div>
 
+          <div className="cards border-[#1e593c] border-[0.1em] p-6 bg-[#f1ede0] rounded-2xl">
+            <b>Leadership</b>
+            <p className="text-[#5a7767] leading-[1.6] mt-3">
+              Founder &amp; Managing Director
             </p>
           </div>
 

@@ -83,8 +83,9 @@ body {
   width: 100%;
   transition: 0.3s ease;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 2% 0 2% 5%;
   &:hover{
     background-color: var(--border);
   }

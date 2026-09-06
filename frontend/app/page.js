@@ -20,8 +20,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-[560px] text-[#5a7767] text-[1.1rem] leading-[1.8]">
-            I am Atik Hasan, an English Teacher, Assistant Director of NSA Joypurhat,
-            and Master Trainer in English. I help learners find the right words
+            I am Atik Hasan, an English Teacher. Founder &amp; Managing Director, and Master Trainer in English. I help learners find the right words
             for school, work, and everyday life.
           </p>
 

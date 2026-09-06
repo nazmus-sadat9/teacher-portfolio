@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex cursor-pointer fixed left-0 top-0 w-full justify-evenly navHoverOne border-[#1e593c] border-[0.1em] py-[1%] backdrop-blur">
+        <div className="hidden md:flex z-999 cursor-pointer fixed left-0 top-0 w-full justify-evenly navHoverOne border-[#1e593c] border-[0.1em] py-[1%] backdrop-blur">
           <h2 className="text-[2rem] font-bold pl-[2%]">Atik Hasan</h2>
 
           <div className="w-[50%] flex justify-evenly text-[2rem] items-center">
@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className={`${isOpen ? "block" : "hidden" } md:hidden cursor-pointer py-[3%] flex justify-evenly items-center border-[#1e593c] border-[0.1em] flex-col`}>
+        <div className={`${isOpen ? "block" : "hidden" } md:hidden w-[90%] rounded-xl cursor-pointer absolute left-[5%] top-[15%] z-999 bg-[#f8f6f0] py-[3%] border-[#1e593c] border-[0.1em]`}>
           <Link className="link" onClick={() => setIsOpen(false)} href="/">Home</Link>
           <Link className="link" onClick={() => setIsOpen(false)} href="/About">About</Link>
           <Link className="link" onClick={() => setIsOpen(false)} href="/Contact">Contact</Link>
