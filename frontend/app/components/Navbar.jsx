@@ -12,7 +12,7 @@ const Navbar = () => {
 
         <div className="w-full flex justify-center items-center md:hidden py-[3%]">
             <div className="w-[95%] flex justify-between items-center p-[2%] rounded-xl backdrop-blur bg-[#ffffff49]">
-            <h2 className="font-semibold md:hidden text-[1.5rem]">Atik Hasan</h2>
+            <h2 className="font-semibold md:hidden text-[1.2rem]">Atik English Academy</h2>
             <button onClick={() => setIsOpen(!isOpen)} className="md:hidden cursor-pointer">
 
               <svg className="w-8 aspect-[1/1]" fill="none" stroke="currentColor" viewBox="0 0 20 20">
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex z-999 cursor-pointer fixed left-0 top-0 w-full justify-evenly navHoverOne border-[#1e593c] border-[0.1em] py-[1%] backdrop-blur">
-          <h2 className="text-[2rem] font-bold pl-[2%]">Atik Hasan</h2>
+          <h2 className="text-[2rem] font-bold pl-[2%]">Atik English Academy</h2>
 
           <div className="w-[50%] flex justify-evenly text-[2rem] items-center">
             <Link className="hoverlink" href="/">Home</Link>

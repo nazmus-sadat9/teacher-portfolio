@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Atik Hasan",
-  description: "Portfolio for a english teacher.",
+  title: "Atik English Academy",
+  description: "A English teacher website.",
 };
 
 export default function RootLayout({ children }) {
