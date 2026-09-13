@@ -31,15 +31,15 @@ const Navbar = () => {
 
           <div className="w-[50%] flex justify-evenly text-[2rem] items-center">
             <Link className="hoverlink" href="/">Home</Link>
-            <Link className="hoverlink" href="/About">About</Link>
-            <Link className="hoverlink" href="/Contact">Contact</Link>
+            <Link className="hoverlink" href="/about">About</Link>
+            <Link className="hoverlink" href="/contact">Contact</Link>
           </div>
         </div>
 
         <div className={`${isOpen ? "block" : "hidden" } md:hidden w-[90%] rounded-xl cursor-pointer absolute left-[5%] top-[15%] z-999 bg-[#f8f6f0] py-[3%] border-[#1e593c] border-[0.1em]`}>
           <Link className="link" onClick={() => setIsOpen(false)} href="/">Home</Link>
-          <Link className="link" onClick={() => setIsOpen(false)} href="/About">About</Link>
-          <Link className="link" onClick={() => setIsOpen(false)} href="/Contact">Contact</Link>
+          <Link className="link" onClick={() => setIsOpen(false)} href="/about">About</Link>
+          <Link className="link" onClick={() => setIsOpen(false)} href="/contact">Contact</Link>
         </div>
       </nav>
     </header>
